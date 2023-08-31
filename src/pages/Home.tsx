@@ -77,7 +77,7 @@ const Home: React.FC = () => {
                     title="Fullstack Developer · Netzwelt"
                     tags={["PHP", "Laravel", "Anguler", "MySql", "JQuery"]}
                     description="Maintenance and full-stack development of a web-based product inventory management for the FortuneGlobe company. 
-                        The system is for management and storage of clothing inventory local and online. It accomodates multiple client companies."
+                      The system is for management and storage of clothing inventory local and online. It accomodates multiple client companies."
                     dateFrom="Feb 2016"
                     dateTo="Oct 2016"
                   />
@@ -85,7 +85,8 @@ const Home: React.FC = () => {
                     icon = "assets/imgs/pccw_icon.jpg"
                     title="Fullstack Developer · Pccw Solutions Inc."
                     tags={["Java", "Struts2", "MySql", "JQuery"]}
-                    description="Support and full-stack development for a Hong Kong based project named Tap&Go  ."
+                    description="Worked with a team to deliver support and full-stack development for a Hong Kong based project named Tap&Go. 
+                      Activities include responding to "
                     dateFrom="Oct 2016"
                     dateTo="Feb 2018"
                   />
