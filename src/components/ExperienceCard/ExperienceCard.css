@@ -1,0 +1,93 @@
+.page-content-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 10vh;
+}
+
+.pc-inner{
+    background-color: #a9a9a9;
+    height: 90vh;
+    width: 100%;
+}
+
+.company-logo{
+    position: relative;    
+    float: right;
+    top: -75px;
+    right: 10%;
+}
+
+.experience-card{
+    background:rgba(255, 255, 255, 0.05);
+}
+
+.card-logo{
+    z-index: 1;
+    position: relative;
+    top: 25px;
+    right: -280px;
+    border-radius: 8px;
+    width: 140px;
+}
+
+.card-text{
+    line-height: 1.5;
+    margin: 0.25rem 0.3rem;
+    color: #acacac;
+}
+.card-text>p {
+    /* font-family: Neoteric !important;
+    font-weight: bold; */
+    font-size: 0.85rem;
+}
+.card-container{
+    width: 22vw;
+    margin: 1rem 0 2rem auto;
+    position: relative;
+    transition: transform .3s;
+    box-shadow: 0 0 8px 1px #0f203b;
+}
+.card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px 2px #293b58;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.tag-list{
+    padding:0;
+    margin: 0;
+}
+.tag {
+    background-color: #B9D9EB;
+    color: #333;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    margin: 0 0.3rem;
+    list-style: none;
+    display: inline-block;
+    margin-top: 0.6rem;
+    font-size: 0.75rem;
+}
+
+.title{
+    font-size: 1rem;
+}
+
+.title span{
+    display: block;
+}
+
+.title span:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.title span:nth-child(2){
+    font-size: 0.8rem;
+    margin: 0 0.3rem;
+    margin-top: 0.5rem;
+    color: #ada684;
+}

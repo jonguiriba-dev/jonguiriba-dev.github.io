@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Metropolis;
+    src: url('../../assets/fonts/Metropolis Font family/Metropolis-Regular.otf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Metropolis;
+    src: url('../../assets/fonts/Metropolis Font family/Metropolis-Bold.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: Above;
+    src: url('../../assets/fonts/AboveDemoRegular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Neoteric;
+    src: url('../../assets/fonts/Neoteric.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Neoteric;
+    src: url('../../assets/fonts/NeotericBold.ttf');
+    font-weight: bold;
+}
+* {
+    font-family: Metropolis !important;
+}
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+.root{
+    /* background-color: #02072F; */
+    --background: none;
+}
+
+.grid{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.experience-card{
+    margin: 0 auto;
+}
+
+h1{
+    font-weight: bold !important;
+    font-size: 3rem !important;
+}
+h2 {
+    font-size: 1.3rem !important;
+    margin-top: 0.6rem !important;
+}
+h4{
+   margin-top: 1.2rem !important;
+   font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0.25rem 0.3rem;
+}
+
+.grid{
+    margin-top: 6rem;
+}
+
+.jobtitle-highlight{
+    background-color: #4d617b;
+    /* background-color: #14307f; */
+    padding: 0.25rem 0.5rem;
+}
+
+div:has(> .section-divider:nth-child(1)){
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid #fff;
+}
+
+.section-divider{
+    /* background-image: linear-gradient(to right, rgba(150, 0, 0, 0), rgb(43 50 63), rgba(62, 65, 71, 0)); */
+    color: rgb(215 215 215);
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    /* width: 200px; */
+    text-align: center;
+    /* -webkit-text-stroke: 1px black; */
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.fixed-container{
+    max-width: 580px;
+    position: fixed;
+    height: 85vh;
+}
+
+.sliding-background {
+    width: 100%;
+    height: 300vh;
+    background-position-y: 165px;
+    position: absolute;
+    opacity: 0.1;
+        
+    background: url('../../assets/imgs/wall_of_text.png') repeat-y;
+    animation: slide 90s linear infinite;
+}
+
+.sliding-background-reverse{width: 100%;
+    height: 300vh;
+    background-position-y: 165px;
+    position: absolute;
+    float: right;
+    opacity: 0.1;
+
+    background: url('../../assets/imgs/wall_of_text_flip.png') repeat-y;
+    background-position: right;
+    animation: slide 200s linear infinite;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -1692px, 0);
+    }
+}
+
