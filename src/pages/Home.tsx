@@ -42,24 +42,19 @@ const Home: React.FC = () => {
                   </h4>
                   <ul>
                     <li>
-                      <ProgressBar label="Typescript" level="Expert" color="gold" value="100%">
-                      </ProgressBar>
+                      <ProgressBar label="Typescript" level="Expert" color="gold" value="100%"/>
                     </li>
                     <li>
-                      <ProgressBar label="Angular" level="Expert" color="gold" value="100%">
-                      </ProgressBar>
+                      <ProgressBar label="Angular" level="Expert" color="gold" value="100%"/>
                     </li>
                     <li>
-                      <ProgressBar label="React" level="Beginner" color="gold" value="30%">
-                      </ProgressBar>
+                      <ProgressBar label="React" level="Beginner" color="gold" value="30%"/>
                     </li>
                     <li>
-                      <ProgressBar label="CSS" level="Capable" color="gold" value="60%">
-                      </ProgressBar>
+                      <ProgressBar label="CSS" level="Capable" color="gold" value="60%"/>
                     </li>
                     <li>
-                      <ProgressBar label="AWS" level="Capable" color="gold" value="60%">
-                      </ProgressBar>
+                      <ProgressBar label="AWS" level="Capable" color="gold" value="60%"/>
                     </li>
                   </ul>
 
@@ -73,7 +68,6 @@ const Home: React.FC = () => {
                 </div>
                 <div>
                   <ExperienceCard 
-                    icon = "assets/imgs/netzwelt_icon.png"
                     title="Fullstack Developer · Netzwelt"
                     tags={["PHP", "Laravel", "Anguler", "MySql", "JQuery"]}
                     description="Maintenance and full-stack development of a web-based product inventory management for the FortuneGlobe company. 
@@ -82,7 +76,6 @@ const Home: React.FC = () => {
                     dateTo="Oct 2016"
                   />
                   <ExperienceCard 
-                    icon = "assets/imgs/pccw_icon.jpg"
                     title="Fullstack Developer · Pccw Solutions Inc."
                     tags={["Java", "Struts2", "MySql", "JQuery"]}
                     description="Worked with a team to deliver support and full-stack development for a Hong Kong based project named Tap&Go. 
@@ -91,7 +84,6 @@ const Home: React.FC = () => {
                     dateTo="Feb 2018"
                   />
                   <ExperienceCard 
-                    icon = "assets/imgs/netzwelt_icon.png"
                     title="Fullstack Developer · MarketConnect Inc."
                     tags={["Nodejs", "Angular", "Ionic", "Android", "Phaser", "Firebase"]}
                     description="Development of multiple 2D Games, Mobile Apps, Websites and Webapps"
@@ -99,7 +91,6 @@ const Home: React.FC = () => {
                     dateTo="Nov 2018"
                   />
                   <ExperienceCard 
-                    icon = "assets/imgs/netzwelt_icon.png"
                     title="Senior Fullstack Developer · Hiraya Water"
                     tags={["PHP","Nodejs", "Angular", "Ionic", "Android", "AWS", "Firebase", "MySql"]}
                     description="Development and maintenance of the RTap System. A water facility enhancement system that makes sure water pressure is optimized to save unnecessary expenditures concerning its operation"
@@ -107,7 +98,6 @@ const Home: React.FC = () => {
                     dateTo="Sep 2021"
                   />
                   <ExperienceCard 
-                    icon = "assets/imgs/netzwelt_icon.png"
                     title="Senior Backend Engineer · Quest Finance"
                     tags={["PHP","Nodejs", "Angular", "Ionic", "Android", "AWS", "Firebase", "MySql"]}
                     description="development and maintenance of the QuestFinance system. A brokerage system that enables easy application and processing of loans from quote, application to funding approval. The system was praised for its smooth UX for applicants and loan officer/analyst alike"

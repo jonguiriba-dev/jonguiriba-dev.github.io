@@ -2,7 +2,15 @@ import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle }
 import './ExperienceCard.css';
 import TagList from '../TagList/TagList'
 
-const ExperienceCard: React.FC = (props) => {
+
+  
+const ExperienceCard = (props:{
+  title:string,
+  dateFrom:string,
+  dateTo:string,
+  description:string,
+  tags:string[]
+}) => {
   return (
     <div className='card-container'>
       <IonCard className="experience-card">

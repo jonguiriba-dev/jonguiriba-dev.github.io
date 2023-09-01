@@ -1,10 +1,10 @@
 import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from 'react';
 import './TagList.css';
-const TagList = ({data}) => {
+const TagList = (props:{data:string[]}) => {
   return (
     <ul className="tag-list">
         {
-            data.map((e: string)=>{
+            props.data.map((e: string)=>{
                 return <li className="tag">{e}</li>
             })
         }
