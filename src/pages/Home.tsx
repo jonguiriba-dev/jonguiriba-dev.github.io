@@ -1,9 +1,12 @@
-import { IonCol, IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar, ScrollDetail} from '@ionic/react';
+import { IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonPage, IonRow, IonTitle, IonToolbar, ScrollDetail} from '@ionic/react';
 import ExperienceCard from '../components/ExperienceCard/ExperienceCard';
 import ProgressBar from '../components/ProgressBar/ProgressBar';
 import Vignette from '../components/Vignette/Vignette';
+import FixedContainer from '../components/FixedContainer/FixedContainer';
+import VerticalContainer from '../components/VerticalContainer/VerticalContainer';
 import './Home.css';
 
+import { downloadSharp, logoLinkedin } from 'ionicons/icons';
 let currentY = 0
 
 function onScroll(event: CustomEvent<ScrollDetail>){
@@ -31,35 +34,58 @@ const Home: React.FC = () => {
         <IonGrid className='grid'>
           <IonRow>
             <IonCol>
-              <div>
-                <div className="fixed-container">
-                  <h1>
-                    Jon Carlo Guiriba
-                  </h1>
-                  <h2><b className="jobtitle-highlight">Senior Engineer</b> at <b>Quest Finance</b></h2>
-                  <h4>
-                    I enjoy crafting solutions to all kinds of scenarios. Building websites, apps, mini-games, and digital services since 2015.
-                  </h4>
-                  <ul>
-                    <li>
-                      <ProgressBar label="Typescript" level="Expert" color="gold" value="100%"/>
-                    </li>
-                    <li>
-                      <ProgressBar label="Angular" level="Expert" color="gold" value="100%"/>
-                    </li>
-                    <li>
-                      <ProgressBar label="React" level="Beginner" color="gold" value="30%"/>
-                    </li>
-                    <li>
-                      <ProgressBar label="CSS" level="Capable" color="gold" value="60%"/>
-                    </li>
-                    <li>
-                      <ProgressBar label="AWS" level="Capable" color="gold" value="60%"/>
-                    </li>
-                  </ul>
-
+              <FixedContainer>
+                <h1>
+                  Jon Carlo Guiriba
+                </h1>
+                <h2><b className="jobtitle-highlight">Senior Engineer</b> at <b>Quest Finance</b></h2>
+                <h4>
+                  I craft solutions to all kinds of scenarios. Building websites, apps, mini-games, and digital services since 2015.
+                </h4>
+                <ul>
+                  <li>
+                    <ProgressBar label="Typescript" level="Expert" color="gold" value="95%"/>
+                  </li>
+                  <li>
+                    <ProgressBar label="Angular" level="Proficient" color="gold" value="90%"/>
+                  </li>
+                  <li>
+                    <ProgressBar label="Python" level="Proficient" color="gold" value="80%"/>
+                  </li>
+                  <li>
+                    <ProgressBar label="CSS" level="Proficient" color="gold" value="80%"/>
+                  </li>
+                  <li>
+                    <ProgressBar label="AWS" level="Capable" color="gold" value="60%"/>
+                  </li>
+                  <li>
+                    <ProgressBar label="PHP" level="Capable" color="gold" value="45%"/>
+                  </li>
+                  <li>
+                    <ProgressBar label="React" level="Beginner" color="gold" value="30%"/>
+                  </li>
+                </ul>
+                <div className='fixed-footer'>
+                  <div>
+                    <VerticalContainer>
+                      <div>Links</div>
+                      <a href="https://www.linkedin.com/in/jon-guiriba-2a5203147/" target="_blank" rel="noopener noreferrer"><IonIcon icon={logoLinkedin}/></a>
+                    </VerticalContainer>
+                    <VerticalContainer>
+                      <div>Download</div>
+                      <a href='../../assets/Resume Jon Carlo Guiriba.pdf' style={{ textDecoration:'none'}} download>Full Resume <IonIcon style={{verticalAlign: '-2px'}} icon={downloadSharp} size="small" aria-label="download"/></a>
+                    </VerticalContainer>
+                    <VerticalContainer>
+                      <div>Email</div>
+                      <p>jonguiriba.dev@gmail.com</p>
+                    </VerticalContainer>
+                    <VerticalContainer>
+                      <div>Mobile</div>
+                      <p>+639150584963</p>
+                    </VerticalContainer>
+                  </div>
                 </div>
-              </div>
+              </FixedContainer>
             </IonCol>
             <IonCol>
               <div>

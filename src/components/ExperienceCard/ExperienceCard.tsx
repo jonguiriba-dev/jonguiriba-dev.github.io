@@ -13,11 +13,12 @@ const ExperienceCard = (props:{
 }) => {
   return (
     <div className='card-container'>
+      <span className='date'>{props.dateFrom} - {props.dateTo}</span>
       <IonCard className="experience-card">
         <IonCardHeader>
           <IonCardTitle className="title">
             <span>{props.title}</span>
-            <span>{props.dateFrom} - {props.dateTo}</span>
+           
           </IonCardTitle>
           <IonCardSubtitle>
             <div className="card-text">
