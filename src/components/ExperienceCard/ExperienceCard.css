@@ -42,7 +42,7 @@
     font-size: 0.85rem;
 }
 .card-container{
-    width: 22vw;
+    max-width: 70%;
     margin: 1rem 0 2rem auto;
     position: relative;
     transition: transform .3s;
@@ -82,8 +82,10 @@
 }
 
 .title span:nth-child(1){
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
 }
 .title span:nth-child(2), .date{
     font-size: 0.8rem;

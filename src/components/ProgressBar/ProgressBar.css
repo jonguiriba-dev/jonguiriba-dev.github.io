@@ -25,7 +25,8 @@
 .gold {
   background-color: #cabb6f;
 }
-
+.progress-bar-container{
+}
 .progress-bar-container ion-row ion-col:nth-child(2) h4{
   text-align: end;
 }

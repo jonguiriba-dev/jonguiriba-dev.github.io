@@ -9,7 +9,8 @@ const ExperienceCard = (props:{
   dateFrom:string,
   dateTo:string,
   description:string,
-  tags:string[]
+  tags:string[],
+  link:string | null
 }) => {
   return (
     <div className='card-container'>
@@ -18,7 +19,6 @@ const ExperienceCard = (props:{
         <IonCardHeader>
           <IonCardTitle className="title">
             <span>{props.title}</span>
-           
           </IonCardTitle>
           <IonCardSubtitle>
             <div className="card-text">
