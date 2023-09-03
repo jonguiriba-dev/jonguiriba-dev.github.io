@@ -20,6 +20,7 @@
 
 .experience-card{
     background:rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 8px 1px #0f203b;
 }
 
 .card-logo{
@@ -34,7 +35,7 @@
 .card-text{
     line-height: 1.5;
     margin: 0.25rem 0.3rem;
-    color: #acacac;
+    color: #cdcdcd;
 }
 .card-text>p {
     /* font-family: Neoteric !important;
@@ -46,10 +47,11 @@
     margin: 1rem 0 2rem auto;
     position: relative;
     transition: transform .3s;
-    box-shadow: 0 0 8px 1px #0f203b;
 }
 .card-container:hover {
     transform: scale(1.05);
+}
+.experience-card:hover{
     box-shadow: 0 0 16px 2px #293b58;
 }
 .bg{
@@ -73,25 +75,49 @@
     font-size: 0.75rem;
 }
 
-.title{
+.card-title{
     font-size: 1rem;
-}
-
-.title span{
-    display: block;
-}
-
-.title span:nth-child(1){
-    font-size: 1rem;
-    font-weight: bold;
     border-bottom: 1px solid #fff;
     padding-bottom: 1rem;
 }
-.title span:nth-child(2), .date{
+
+.card-title span{
+    display: block;
+}
+
+.card-title .title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.card-container>.date{
     font-size: 0.8rem;
     margin: 0 0.3rem;
     margin-top: 0.5rem;
     color: #918f85;
     position: absolute;
     left: -10rem;
+}
+
+.card-title .date{
+    font-size: 0.8rem;
+    margin: 0 0.3rem;
+    margin-top: 0.8rem;
+    color: #918f85;
+    position: relative;
+}
+
+@media screen and (max-width:700px) {
+    .card-container>.date {
+            position: relative;
+            display: block;
+            left: 0;
+            text-align: center;
+            margin: 1rem;
+            margin-bottom: 0.25rem;
+            
+    }
+    .card-container{
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+    }
 }

@@ -57,13 +57,13 @@
     margin: 0 auto;
 }
 
-h1{
-    font-weight: bold !important;
-    font-size: 3rem !important;
+.root h1{
+    font-weight: bold;
+    font-size: 3rem ;
 }
-h2 {
-    font-size: 1.3rem !important;
-    margin-top: 0.6rem !important;
+.root h2 {
+    font-size: 1.3rem ;
+    margin-top: 0.6rem ;
 }
 h4{
    margin-top: 1.2rem !important;
@@ -77,8 +77,14 @@ h4{
 }
 
 .jobtitle-highlight{
+    /* background-color: #4d617b;
+    padding: 0.25rem 0.5rem; */
+    /* color: #4d617b; */
+}
+
+.job-highlight{
+    /* color: #87b3eb; */
     background-color: #4d617b;
-    /* background-color: #14307f; */
     padding: 0.25rem 0.5rem;
 }
 
@@ -110,17 +116,10 @@ div:has(> .section-divider:nth-child(1)){
     animation: slide 90s linear infinite;
 }
 
-.sliding-background-reverse{width: 100%;
-    height: 300vh;
-    background-position-y: 165px;
-    position: absolute;
-    float: right;
-    opacity: 0.1;
-
+.reverse{
     background: url('../../assets/imgs/wall_of_text_flip.png') repeat-y;
     background-position: right;
     animation: slide 200s linear infinite;
-
 }
 
 @keyframes slide {
@@ -166,6 +165,9 @@ ion-col{
 }
 
 @media screen and (max-width:1280px) {
+    .sliding-background{
+        opacity: 0.05;
+    }
     .flex-container{
         display: flex;
         flex-direction: column;
@@ -181,4 +183,13 @@ ion-col{
         margin: 0 auto;
     }
     
+}
+
+@media screen and (max-width:500px) {
+    .root h1{
+        font-size: 2rem;
+    }
+    .root h2{
+        font-size: 1rem;
+    }
 }

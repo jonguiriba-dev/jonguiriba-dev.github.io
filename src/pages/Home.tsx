@@ -18,7 +18,7 @@ const Home: React.FC = () => {
     <IonPage 
     >
       <div className='sliding-background'></div>
-      <div className='sliding-background-reverse'></div>
+      <div className='sliding-background reverse'></div>
       <Vignette></Vignette>
 
       <IonContent fullscreen 
@@ -33,7 +33,7 @@ const Home: React.FC = () => {
               <h1>
                 Jon Carlo Guiriba
               </h1>
-              <h2><b className="jobtitle-highlight">Senior Engineer</b> at <b>Quest Finance</b></h2>
+              <h2><b className="jobtitle-highlight">Senior Engineer</b> at <b className='job-highlight'>Quest Finance</b></h2>
               <h4>
                 I craft solutions to all kinds of scenarios. Building websites, apps, mini-games, and digital services since 2015.
               </h4>
@@ -67,12 +67,12 @@ const Home: React.FC = () => {
                     <a href="https://www.linkedin.com/in/jon-guiriba-2a5203147/" target="_blank" rel="noopener noreferrer"><IonIcon icon={logoLinkedin}/></a>
                   </VerticalContainer>
                   <VerticalContainer>
-                    <div>Download</div>
-                    <a href='../../assets/Resume Jon Carlo Guiriba.pdf' style={{ textDecoration:'none'}} download>Full Resume <IonIcon style={{verticalAlign: '-2px'}} icon={downloadSharp} size="small" aria-label="download"/></a>
-                  </VerticalContainer>
-                  <VerticalContainer>
                     <div>Email</div>
                     <p>jonguiriba.dev@gmail.com</p>
+                  </VerticalContainer>
+                  <VerticalContainer>
+                    <div>Download</div>
+                    <a href='../../assets/Resume Jon Carlo Guiriba.pdf' style={{ textDecoration:'none'}} download>Full Resume <IonIcon style={{verticalAlign: '-2px'}} icon={downloadSharp} size="small" aria-label="download"/></a>
                   </VerticalContainer>
                   <VerticalContainer>
                     <div>Mobile</div>
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
                 title="Fullstack Developer · Netzwelt"
                 tags={["PHP", "Laravel", "Angular", "MySql", "JQuery"]}
                 description="Maintenance and full-stack development of a web-based product inventory management for the FortuneGlobe company. 
-                  The system is for management and storage of clothing inventory local and online. It accomodates multiple client companies."
+                  The system is for management and storage of clothing inventory local and online for multiple client companies."
                 dateFrom="March 2016"
                 dateTo="Oct 2016"
                 link="https://www.fortuneglobe.com/en/"
@@ -100,7 +100,6 @@ const Home: React.FC = () => {
                 title="Fullstack Developer · Pccw Solutions Inc."
                 tags={["Java", "Struts2", "MySql", "JQuery"]}
                 description="Worked with a team to deliver support and full-stack development for a Hong Kong based project named Tap&Go. 
-                  Activities include responding to user experience support and maintainance for their user portals that allow users manage their accounts.
                   Tap&Go is a top-up credit card that is used on a scanner for easy purchases like a train ticket or convenient stores."
                 dateFrom="Oct 2016"
                 dateTo="Feb 2018"
@@ -111,8 +110,7 @@ const Home: React.FC = () => {
                 tags={["Nodejs", "Angular", "Ionic", "Android", "Phaser", "Firebase"]}
                 description="Responsible for realizing all their digital services. Worked with creative designers for
                   development of multiple 2D Games, Mobile Apps (Android), Websites and PWAs. 
-                  Market Connect Inc. is a company that helps other brands with their marketing strategy and advertisements. Enabling product reach 
-                  with specialization in healthcare products. "
+                  Market Connect Inc. is a company that helps other brands with their marketing strategy and advertisments, specializing in healthcare products. "
                 dateFrom="Feb 2018"
                 dateTo="Nov 2018"
                 link="https://connectwithmci.com/"
@@ -120,10 +118,10 @@ const Home: React.FC = () => {
               <ExperienceCard 
                 title="Senior Fullstack Developer · Hiraya Water"
                 tags={["Python","Typescript","Nodejs", "Angular", "Ionic", "Android", "AWS", "Firebase", "MySQL"]}
-                description="Solo Development and maintenance of their digital services and most importantly RTap System. Deliverables include a TCP server
-                to connect their IOT of water pumps, android app for remote management, PWA that shows pump location and status, data charts and alert/notifications.
+                description="Development and maintenance of the RTap System. Worked closely with a team of talented engineers and data analysts on an iterative deveploment. 
+                Deliverables include a TCP server to connect the IOT of water pumps, android app for remote management, PWA that shows pump location and status, data charts and alert/notifications.
                 The RTap System is water facility management system that makes sure water pressure is optimized and running properly
-                to save unnecessary expenditures concerning its operation. Worked closely with a team of talented engineers and data analysts on an iterative deveploment. "
+                to save unnecessary expenditures concerning its operation. "
                 dateFrom="Aug 2018"
                 dateTo="Sep 2021"
                 link="https://www.hirayawater.com/"
@@ -133,7 +131,7 @@ const Home: React.FC = () => {
                 tags={["Typescript","Nodejs", "React","AWS", "PSQL", "Terraform", ]}
                 description="Worked with a team in development and maintenance of the QuestFinance system. A brokerage system that enables easy 
                 application and processing of loans from quote, application to funding approval. Responsibilites were to maintain and develop backend features.
-                The system was praised for its smooth experience for applicants and loan officer/analyst alike"
+                "
                 dateFrom="Sep 2021"
                 dateTo="Jul 2023"
                 link="https://quest.finance/"

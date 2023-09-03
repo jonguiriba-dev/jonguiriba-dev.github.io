@@ -2,8 +2,6 @@ import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle }
 import './ExperienceCard.css';
 import TagList from '../TagList/TagList'
 
-
-  
 const ExperienceCard = (props:{
   title:string,
   dateFrom:string,
@@ -17,8 +15,8 @@ const ExperienceCard = (props:{
       <span className='date'>{props.dateFrom} - {props.dateTo}</span>
       <IonCard className="experience-card">
         <IonCardHeader>
-          <IonCardTitle className="title">
-            <span>{props.title}</span>
+          <IonCardTitle className="card-title">
+            <span className='title'>{props.title}</span>
           </IonCardTitle>
           <IonCardSubtitle>
             <div className="card-text">
