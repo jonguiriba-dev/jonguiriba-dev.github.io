@@ -8,27 +8,35 @@ const ExperienceCard = (props:{
   dateTo:string,
   description:string,
   tags:string[],
-  link:string | null
+  link:string | null,
+  onMouseEnter?:any,
+  onMouseLeave?:any 
+
 }) => {
   return (
-    <div className='card-container'>
-      <span className='date'>{props.dateFrom} - {props.dateTo}</span>
-      <IonCard className="experience-card">
-        <IonCardHeader>
-          <IonCardTitle className="card-title">
-            <span className='title'>{props.title}</span>
-          </IonCardTitle>
-          <IonCardSubtitle>
-            <div className="card-text">
-              <p>{props.description}</p>
-            </div>
-          </IonCardSubtitle>
-        </IonCardHeader>
-        <IonCardContent>
-            <TagList data={props.tags}/>
-        </IonCardContent>
-      </IonCard>
-    </div>    
+      <div className='card-container'>
+        <div className='screen-bg'>
+          <div></div>
+        </div>
+        <span className='date'>{props.dateFrom} - {props.dateTo}</span>
+        <a style={{textDecoration: "none", pointerEvents: props.link ? "initial" : "none"}} href={props.link || ""} target="_blank" rel="noopener noreferrer">
+        <IonCard className="experience-card" onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave}>
+          <IonCardHeader>
+            <IonCardTitle className="card-title">
+              <span className='title'>{props.title}</span>
+            </IonCardTitle>
+            <IonCardSubtitle>
+              <div className="card-text">
+                <p>{props.description}</p>
+              </div>
+            </IonCardSubtitle>
+          </IonCardHeader>
+          <IonCardContent>
+              <TagList data={props.tags}/>
+          </IonCardContent>
+        </IonCard>
+        </a>
+      </div>    
   );
 };
 

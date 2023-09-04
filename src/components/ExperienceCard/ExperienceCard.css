@@ -21,6 +21,7 @@
 .experience-card{
     background:rgba(255, 255, 255, 0.05);
     box-shadow: 0 0 8px 1px #0f203b;
+    transition: background-color 0.3s;
 }
 
 .card-logo{
@@ -51,8 +52,17 @@
 .card-container:hover {
     transform: scale(1.05);
 }
+.card-container>.date{
+    font-size: 0.8rem;
+    margin: 0 0.3rem;
+    margin-top: 0.5rem;
+    color: #c7c3b1;
+    position: absolute;
+    left: -10rem;
+}
 .experience-card:hover{
     box-shadow: 0 0 16px 2px #293b58;
+    background-color: #061020 !important;
 }
 .bg{
     position: absolute;
@@ -89,14 +99,6 @@
     font-size: 1rem;
     font-weight: bold;
 }
-.card-container>.date{
-    font-size: 0.8rem;
-    margin: 0 0.3rem;
-    margin-top: 0.5rem;
-    color: #918f85;
-    position: absolute;
-    left: -10rem;
-}
 
 .card-title .date{
     font-size: 0.8rem;
@@ -105,6 +107,7 @@
     color: #918f85;
     position: relative;
 }
+
 
 @media screen and (max-width:700px) {
     .card-container>.date {
