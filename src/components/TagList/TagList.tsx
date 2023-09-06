@@ -5,7 +5,7 @@ const TagList = (props:{data:string[]}) => {
     <ul className="tag-list">
         {
             props.data.map((e: string)=>{
-                return <li className="tag">{e}</li>
+                return <li key={e} className="tag">{e}</li>
             })
         }
     </ul>

@@ -19,13 +19,27 @@ const Home: React.FC = () => {
 
   const [cardSelected, setCardSelected] = useState(-1);
 
-  function onCardSelected(val:number):void{
-    console.log("VAL ", val)
-    setCardSelected(val)
-
-  }
-
   let screenBgs = ["netzwelt", "pccw", "mci", "hiraya", "quest"]
+
+  let skillSet = [
+    {
+      label:"Typescript / Nodejs", level:"Expert", color:"gold", value:"95%",
+    },{
+      label:"Angular" , level:"Proficient" , color:"gold" , value:"85%",
+    },{ 
+     label:"Python" , level:"Proficient" , color:"gold" , value:"85%",
+    },{ 
+     label:"Java" , level:"Proficient" , color:"gold" , value:"70%",
+    },{ 
+      label:"CSS" , level:"Proficient" , color:"gold" , value:"70%",
+    },{ 
+      label:"AWS" , level:"Intermediate" , color:"gold" , value:"60%",
+    },{ 
+      label:"PHP" , level:"Intermediate" , color:"gold" , value:"45%",
+    },{ 
+      label:"React" , level:"Intermediate" , color:"gold" , value:"45%"
+    }
+  ]
 
   let jobExperiences = [
     {
@@ -135,7 +149,7 @@ const Home: React.FC = () => {
         img.src = image;
     });
   });
-  
+
   return (
     <IonPage 
     >
@@ -162,30 +176,16 @@ const Home: React.FC = () => {
                 I craft solutions to all kinds of scenarios. Building websites, apps, mini-games, and digital services.
               </h4>
               <ul>
-                <li>
-                  <ProgressBar label="Typescript / Nodejs" level="Expert" color="gold" value="95%"/>
-                </li>
-                <li>
-                  <ProgressBar label="Angular" level="Proficient" color="gold" value="85%"/>
-                </li>
-                <li>
-                  <ProgressBar label="Python" level="Proficient" color="gold" value="85%"/>
-                </li>
-                <li>
-                  <ProgressBar label="Java" level="Proficient" color="gold" value="70%"/>
-                </li>
-                <li>
-                  <ProgressBar label="CSS" level="Proficient" color="gold" value="70%"/>
-                </li>
-                <li>
-                  <ProgressBar label="AWS" level="Intermediate" color="gold" value="60%"/>
-                </li>
-                <li>
-                  <ProgressBar label="PHP" level="Intermediate" color="gold" value="45%"/>
-                </li>
-                <li>
-                  <ProgressBar label="React" level="Intermediate" color="gold" value="45%"/>
-                </li>
+                {skillSet.map((e,i)=>{
+                    return <li  key={i}>
+                      <ProgressBar 
+                        label={e.label} 
+                        level={e.level}
+                        color={e.color}
+                        value={e.value}
+                      />
+                    </li>
+                })}
               </ul>
               <div className='fixed-footer'>
                 <div>
@@ -215,8 +215,8 @@ const Home: React.FC = () => {
             </div>
             <div className={`cards-container ${cardSelected != -1 ? 'flat-bg' : ''}`}>
                 {jobExperiences.map((e,i)=>{
-                  console.log('i ',i)
                     return <ExperienceCard 
+                      key={i}
                       onMouseEnter={() => setCardSelected(i)} 
                       onMouseLeave={() => setCardSelected(-1)}
                       title={e.title}
@@ -234,6 +234,7 @@ const Home: React.FC = () => {
             <div>
                 {projectExperiences.map((e,i)=>{
                     return <ExperienceCard 
+                      key={i}
                       title={e.title}
                       tags={e.tags}
                       description={e.description}

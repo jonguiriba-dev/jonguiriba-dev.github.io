@@ -11,10 +11,10 @@ const ExperienceCard = (props:{
   link:string | null,
   onMouseEnter?:any,
   onMouseLeave?:any 
-
+  id?:number
 }) => {
   return (
-      <div className='card-container'>
+      <div key={props.id} className='card-container'>
         <div className='screen-bg'>
           <div></div>
         </div>
