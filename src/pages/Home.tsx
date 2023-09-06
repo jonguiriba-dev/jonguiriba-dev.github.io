@@ -160,13 +160,13 @@ const Home: React.FC = () => {
                   <ProgressBar label="CSS" level="Proficient" color="gold" value="70%"/>
                 </li>
                 <li>
-                  <ProgressBar label="AWS" level="Capable" color="gold" value="60%"/>
+                  <ProgressBar label="AWS" level="Intermediate" color="gold" value="60%"/>
                 </li>
                 <li>
-                  <ProgressBar label="PHP" level="Capable" color="gold" value="45%"/>
+                  <ProgressBar label="PHP" level="Intermediate" color="gold" value="45%"/>
                 </li>
                 <li>
-                  <ProgressBar label="React" level="Beginner" color="gold" value="30%"/>
+                  <ProgressBar label="React" level="Intermediate" color="gold" value="45%"/>
                 </li>
               </ul>
               <div className='fixed-footer'>
