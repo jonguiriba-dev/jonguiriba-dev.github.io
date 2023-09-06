@@ -157,6 +157,9 @@ const Home: React.FC = () => {
                   <ProgressBar label="Python" level="Proficient" color="gold" value="85%"/>
                 </li>
                 <li>
+                  <ProgressBar label="Java" level="Proficient" color="gold" value="70%"/>
+                </li>
+                <li>
                   <ProgressBar label="CSS" level="Proficient" color="gold" value="70%"/>
                 </li>
                 <li>
@@ -197,6 +200,7 @@ const Home: React.FC = () => {
             </div>
             <div className={`cards-container ${cardSelected != -1 ? 'flat-bg' : ''}`}>
                 {jobExperiences.map((e,i)=>{
+                  console.log('i ',i)
                     return <ExperienceCard 
                       onMouseEnter={() => setCardSelected(i)} 
                       onMouseLeave={() => setCardSelected(-1)}

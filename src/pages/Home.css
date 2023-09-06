@@ -163,7 +163,7 @@ div:has(> .section-divider:nth-child(1)){
 }
 
 .fixed-footer{
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
