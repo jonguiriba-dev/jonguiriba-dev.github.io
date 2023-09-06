@@ -5,7 +5,7 @@ import Vignette from '../components/Vignette/Vignette';
 import FixedContainer from '../components/FixedContainer/FixedContainer';
 import VerticalContainer from '../components/VerticalContainer/VerticalContainer';
 import './Home.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { downloadSharp, logoLinkedin } from 'ionicons/icons';
 
@@ -121,6 +121,21 @@ const Home: React.FC = () => {
     }
   ]
 
+  let preloadImages= [
+    "../../assets/imgs/screen_netzwelt.JPG",
+    "../../assets/imgs/screen_pccw.JPG",
+    "../../assets/imgs/screen_mci.JPG",
+    "../../assets/imgs/screen_hiraya.JPG",
+    "../../assets/imgs/screen_quest.JPG",
+  ]
+
+  useEffect(() => {
+    preloadImages.forEach((image) => {
+        const img = new Image();
+        img.src = image;
+    });
+  });
+  
   return (
     <IonPage 
     >
