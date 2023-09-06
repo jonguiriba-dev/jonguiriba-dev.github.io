@@ -144,7 +144,7 @@ const Home: React.FC = () => {
               </h1>
               <h2><b className="jobtitle-highlight">Senior Engineer</b> at <b className='job-highlight'>Quest Finance</b></h2>
               <h4>
-                I craft solutions to all kinds of scenarios. Building websites, apps, mini-games, and digital services since 2015.
+                I craft solutions to all kinds of scenarios. Building websites, apps, mini-games, and digital services.
               </h4>
               <ul>
                 <li>
