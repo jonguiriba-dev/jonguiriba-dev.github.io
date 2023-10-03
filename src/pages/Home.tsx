@@ -199,7 +199,7 @@ const Home: React.FC = () => {
                   </VerticalContainer>
                   <VerticalContainer>
                     <div>Download</div>
-                    <a href='../../assets/Resume Jon Carlo Guiriba.pdf' style={{ textDecoration:'none'}} download>Full Resume <IonIcon style={{verticalAlign: '-2px'}} icon={downloadSharp} size="small" aria-label="download"/></a>
+                    <a href='../../assets/Resume_Jon_Carlo_Guiriba.pdf' style={{ textDecoration:'none'}} download>Full Resume <IonIcon style={{verticalAlign: '-2px'}} icon={downloadSharp} size="small" aria-label="download"/></a>
                   </VerticalContainer>
                   <VerticalContainer>
                     <div>Mobile</div>
