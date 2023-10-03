@@ -83,7 +83,7 @@ const Home: React.FC = () => {
       description:`Worked with a team in development and maintenance of the QuestFinance system. A brokerage system that enables easy 
       application and processing of loans from quote, application to funding approval. Responsibilites were to maintain and develop backend features.`,
       dateFrom:"Sep 2021",
-      dateTo:"Jul 2023",
+      dateTo:"Aug 2023",
       link:"https://quest.finance/"
     }
   ]
